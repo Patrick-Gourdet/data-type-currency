@@ -13,10 +13,10 @@ class currency {
     std::string sign;
 public:
     currency(){};
-    currency(std::string,int);
+    currency(signType ,std::string,float,float);
     ~currency(){};
     currency(std::string,int, float);
-    void setDollarAmount(float);
+    void setValue(signType,std::string,float,float);
     float getDollarAmont();
     currency addDollar(currency,currency);
     currency multiplyDollar(currency,currency);
